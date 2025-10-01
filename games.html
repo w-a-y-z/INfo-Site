@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игры</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.8);
+      border: 2px solid #ff0000;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid #ff0000;
+    }
+
+    .card-title {
+      font-size: 20px;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .back {
+      margin-top: 30px;
+    }
+
+    .back a {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #ff0000;
+      border-radius: 8px;
+      color: #ff0000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back a:hover {
+      background: #ff0000;
+      color: black;
+      box-shadow: 0 0 15px #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Игры</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="game1.jpg" alt="Игра 1">
+        <div class="card-title">★Fortnite★</div>
+            <ul>
+                <li>NickName:</li>
+                <li>DPI 1900</li>
+                <li>Sens X 2.4%</li>
+                <li>Sena Y 2.4%</li>
+                <li>Target 33.6%</li>
+                <li>Scope 34.7%</li>
+                <li>Res 1720x1080</li>
+                <li>FPS Cap 300</li>
+                <li>polling rate 1000</li>
+                <li>Rendering Mode Performance</li>
+                <li>Brighthess 148%</li>
+                <li>3D Resolution 99%</li>
+                <li>All Low</li>
+                <li>NVIDIA RLL On+Boost</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="game2.jpg" alt="Игра 2">
+        <div class="card-title">★Call of Duty®★</div>
+        <p>описание игры.</p>
+      </div>
+      <div class="card">
+        <img src="game3.jpg" alt="Игра 3">
+        <div class="card-title">★VALORANT★</div>
+        <ul>
+                <li>NickName:</li>
+                <li>DPI 1900</li>
+                <li>Sensitivity 0.122</li>
+                <li>Scoped SM 0.937</li>
+                <li>ADS SM 0.737</li>
+                <li>Enemy HC Red/Purple</li>
+                <li>Res 1440x1080</li>
+                <li>FPS Cap 300</li>
+                <li>polling rate 1000</li>
+                <li>NVIDIA RLL On+Boost</li>
+                <li>Graphic All Low</li>
+                <li>HAND FPH Left</li>
+                </ul>
+                <ul>
+<li>RANK GOld 1</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="game4.jpg" alt="Игра 4">
+        <div class="card-title">Название игры 4</div>
+        <p>Описание четвёртой игры.</p>
+      </div>
+      <!-- Можно добавлять ещё карточки -->
+    </div>
+
+    <div class="back">
+      <a href="index.html">⬅ Назад на главную</a>
+    </div>
+  </div>
+</body>
+</html>

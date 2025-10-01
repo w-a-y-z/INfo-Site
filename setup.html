@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Переферия</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.8);
+      border: 2px solid #ff0000;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff0000;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid #ff0000;
+    }
+
+    .card-title {
+      font-size: 20px;
+      color: #ff0000;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .back {
+      margin-top: 30px;
+    }
+
+    .back a {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #ff0000;
+      border-radius: 8px;
+      color: #ff0000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .back a:hover {
+      background: #ff0000;
+      color: black;
+      box-shadow: 0 0 15px #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Переферия</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="mouse.jpg" alt="Мышка">
+        <div class="card-title">Мышка</div>
+        <p>Например: Logitech G Pro X Superlight</p>
+      </div>
+      <div class="card">
+        <img src="keyboard.jpg" alt="Клавиатура">
+        <div class="card-title">Клавиатура</div>
+        <p>Например: HyperX Alloy Origins</p>
+      </div>
+      <div class="card">
+        <img src="headset.jpg" alt="Наушники">
+        <div class="card-title">Наушники</div>
+        <p>Например: SteelSeries Arctis 7</p>
+      </div>
+      <div class="card">
+        <img src="monitor.jpg" alt="Монитор">
+        <div class="card-title">Монитор</div>
+        <p>Например: 27" 144Hz ASUS ROG</p>
+      </div>
+      <div class="card">
+        <img src="pc.jpg" alt="ПК">
+        <div class="card-title">Мой ПК</div>
+        <p>CPU: Ryzen 5 5600X<br>GPU: RTX 3060 Ti<br>RAM: 16GB</p>
+      </div>
+    </div>
+
+    <div class="back">
+      <a href="index.html">⬅ Назад на главную</a>
+    </div>
+  </div>
+</body>
+</html>

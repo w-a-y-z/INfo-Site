@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("background.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 36px;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff0000;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .card {
+      background: rgba(20, 20, 20, 0.8);
+      border: 2px solid #ff0000;
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff0000;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      color: #ff0000;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Приветик 👋</h1>
+    <div class="grid">
+      <a href="life.html">
+        <div class="card">
+          <img src="life.jpg" alt="Я в жизни">
+          <div class="card-title">Я в жизни</div>
+        </div>
+      </a>
+      <a href="games.html">
+        <div class="card">
+          <img src="games.jpg" alt="Игры">
+          <div class="card-title">Любимые игры</div>
+        </div>
+      </a>
+      <a href="setup.html">
+        <div class="card">
+          <img src="setup.jpg" alt="Переферия">
+          <div class="card-title">Переферия</div>
+        </div>
+      </a>
+      <a href="social.html">
+        <div class="card">
+          <img src="social.jpg" alt="Мои соцсети">
+          <div class="card-title">Мои соцсети</div>
+        </div>
+      </a>
+      <a href="extra1.html">
+        <div class="card">
+          <img src="extra1.jpg" alt="Дополнительно">
+          <div class="card-title">Дополнительно</div>
+        </div>
+      </a>
+      <a href="extra2.html">
+        <div class="card">
+          <img src="extra2.jpg" alt="Ещё">
+          <div class="card-title">Ещё</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
